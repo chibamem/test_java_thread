@@ -9,8 +9,14 @@ public class HogeThreadTest {
 	public void test() {
 		Thread thread = new HogeThread();
 		Thread thread2 = new HogeThread();
-		thread2.start();
 		thread.start();
+		thread2.start();
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
