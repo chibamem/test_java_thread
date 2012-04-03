@@ -83,4 +83,19 @@ public class ForwardingSet<E> implements Set<E> {
 		return null;
 	}
 	public Forwading
+
+	@Override
+	public boolean equals(Object o) {
+	    return s.equals(o);
+	}
+
+	@Override
+	public int hashCode() {
+	    return size().hashCode();
+	}
+
+	@Override
+	public String toString() {
+	    return s.toString();
+	}
 }
