@@ -14,5 +14,10 @@ public class SlowCountDownLatch276 {
 			}
 		}
 	}
+	
+	public synchronized void countDown() {
+		if (count != 0)
+			count--;
+	}
 
 }
