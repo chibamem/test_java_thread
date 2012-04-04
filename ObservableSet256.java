@@ -68,4 +68,5 @@ public class ObservableSet256<E> extends ForwardingSet<E> {
 		TimeUnit.SECONDS.sleep(1);
 		stopRequested = true;
 	}
+// test
 }
